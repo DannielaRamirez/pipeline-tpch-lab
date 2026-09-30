@@ -1,0 +1,33 @@
+site_name: End-to-End Data Pipeline Lab
+site_description: PostgreSQL -> Snowflake (Bronze/Silver/Gold) -> dbt -> Power BI
+# TODO: replace YOUR-USER with your GitHub username
+site_url: https://DannielaRamirez.github.io/pipeline-tpch-lab/
+repo_url: https://github.com/DannielaRamirez/pipeline-tpch-lab
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Overview: index.md
+  - Phase 0 - Source data: phase0.md
+  - Phase 1 - Validate source: phase1.md
+  - Phase 2 - Bronze layer: phase2.md
+  - Phase 3 - Silver and Gold: phase3.md
+  - Phase 4 - Power BI: phase4.md
+  - Concepts I learned: concepts.md
